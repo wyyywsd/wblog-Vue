@@ -21,7 +21,7 @@
           ref="md"
           :editable="false"
           :toolbarsFlag="false"
-          :navigation="false"
+          :navigation="isShowNavigation"
           class="article_content"
           previewBackground="Transparent"
         />
@@ -40,6 +40,7 @@ export default {
       articleTitle: "",
       articleContent: "",
       articleAuthor: {},
+      isShowNavigation: false,
     };
   },
 
@@ -64,7 +65,6 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~mavon-editor/dist/css/index.css'
-
 .el-row
   margin 0
   .el-col
